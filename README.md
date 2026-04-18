@@ -1,7 +1,15 @@
-# Scientist AI Guardrail — Prototype v0.1
+# Safety Guardrail Scaffold — OMG Velocity Demo
 
-A prototype implementation of the "Scientist AI" guardrail concept from Bengio et al.
-(2023–2025). Built in one session. Honest about what it is and what it isn't.
+> **Scope disclaimer**: This is NOT a reproduction of LawZero's Scientist AI.
+> It is an exploratory prototype that uses keyword-based encoding + bootstrap
+> ensemble to approximate the *architectural shape* of Bengio et al. (2023–2025).
+> No VAE, no semantic embeddings, no formal Bayesian posterior. Built in 16 minutes
+> as a stack velocity test. See [Known Limitations](#known-limitations--v01) and
+> [Gap Analysis](#gap-analysis-vs-bengio-paper) for the full honest delta.
+
+What this *is*: a working scaffold that respects the interface contract of Scientist AI
+(stateless, probabilistic output, theory marginalization) while approximating every
+internal component. Runnable end-to-end in under 30 seconds. Documented failure modes.
 
 ---
 
