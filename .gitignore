@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+checkpoints/
+benchmark_log.json
+.env
