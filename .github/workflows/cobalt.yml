@@ -1,0 +1,29 @@
+name: COBALT Security Scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  cobalt:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run COBALT Security Scanner
+        uses: dom-omg/cobalt-action@v1
+        with:
+          path: '.'
+          severity: 'LOW'
+          sarif-file: 'cobalt-results.sarif'
+
+      - name: Upload SARIF to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: cobalt-results.sarif

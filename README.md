@@ -1,3 +1,5 @@
+[![COBALT Security Scan](https://github.com/dom-omg/scientist-ai-structural-mimic/actions/workflows/cobalt.yml/badge.svg)](https://github.com/marketplace/actions/cobalt-security-scanner)
+
 # Scientist AI — Structural Mimic (v0.1, exploratory)
 
 *16-minute reproduction attempt by QreativeLab OMG stack targeting the architectural
